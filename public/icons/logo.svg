@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="29.450535mm"
+   height="33.992168mm"
+   viewBox="0 0 29.450535 33.992168"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="3.4066516"
+     inkscape:cx="45.792766"
+     inkscape:cy="91.145218"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-30.040938,-116.69119)">
+    <path
+       style="color:#000000;fill:#4f46e5;stroke-width:0.26616;-inkscape-stroke:none"
+       d="m 44.766533,116.69119 -14.725595,8.49837 v 16.99608 l 14.725595,8.49772 14.724939,-8.49772 v -0.545 -16.45108 z m 0,2.18004 12.836537,7.40835 v 14.81539 l -12.836537,7.40835 -12.83654,-7.4077 v -14.81604 z"
+       id="path1363" />
+    <g
+       aria-label="R"
+       id="text1865"
+       style="font-weight:bold;font-size:17.8587px;line-height:1;font-family:'Atkinson Hyperlegible';-inkscape-font-specification:'Atkinson Hyperlegible Bold';opacity:1;fill:#4f46e5;stroke-width:0.794364"
+       transform="matrix(1.2588682,0,0,1.2588682,-11.588546,-34.60738)">
+      <path
+         d="m 50.335696,139.62614 -2.964544,-4.19679 c 1.750153,-0.62505 2.75024,-2.01803 2.75024,-3.94677 0,-2.71453 -1.964457,-4.35753 -5.21474,-4.35753 h -4.875425 v 12.50109 h 1.78587 v -3.8039 h 3.089555 c 0.26788,0 0.535761,-0.0179 0.785782,-0.0357 l 2.696664,3.83962 z m -5.48262,-5.32189 h -3.035979 v -5.62549 h 3.035979 c 2.285913,0 3.482446,1.01795 3.482446,2.80382 0,1.78587 -1.196533,2.82167 -3.482446,2.82167 z"
+         style="font-weight:500;font-family:Montserrat;-inkscape-font-specification:'Montserrat Medium';stroke-width:0.794364"
+         id="path17663" />
+    </g>
+  </g>
+</svg>
