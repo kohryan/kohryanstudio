@@ -1,18 +1,18 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import Link from 'next/link'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Popover, Transition } from '@headlessui/react'
 import {
     MenuIcon,
     XIcon,
   } from '@heroicons/react/outline'
 
 const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Team', href: '#', current: false },
-    { name: 'Projects', href: '#', current: false },
-    { name: 'Calendar', href: '#', current: false },
-    { name: 'Reports', href: '#', current: false },
+    { name: 'About', href: '#', current: true },
+    { name: 'Experience', href: '#', current: false },
+    { name: 'Work', href: '#', current: false },
+    { name: 'Project', href: '#', current: false },
+    { name: 'Contact', href: '#', current: false },
   ]
 
 function classNames(...classes) {
@@ -22,7 +22,7 @@ function classNames(...classes) {
 export default function Navbar() {
   return (
     <div className="min-h-full">
-        <Disclosure as="nav">
+        <Popover as="nav">
           {({ open }) => (
             <>
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -75,22 +75,31 @@ export default function Navbar() {
                   </div>
                   <div className="-mr-2 flex md:hidden">
                     {/* Mobile menu button */}
-                    <Disclosure.Button className="mt-8 inline-flex items-center justify-center p-2 rounded-md text-indigo-600 hover:border-2 hover:border-indigo-600 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-white">
+                    <Popover.Button className="mt-8 inline-flex items-center justify-center p-2 rounded-md text-indigo-600 hover:border-2 hover:border-indigo-600 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-600 focus:ring-indigo-600">
                       <span className="sr-only">Open main menu</span>
                       {open ? (
                         <XIcon className="block h-6 w-6" aria-hidden="true" />
                       ) : (
                         <MenuIcon className="block h-6 w-6" aria-hidden="true" />
                       )}
-                    </Disclosure.Button>
+                    </Popover.Button>
                   </div>
                 </div>
               </div>
 
-              <Disclosure.Panel className="md:hidden bg-white">
+            <Transition
+                   as={Fragment}
+                   enter="duration-200 ease-out"
+                   enterFrom="opacity-0 scale-95"
+                   enterTo="opacity-100 scale-100"
+                   leave="duration-100 ease-in"
+                   leaveFrom="opacity-100 scale-100"
+                   leaveTo="opacity-0 scale-95"
+            >
+              <Popover.Panel className="absolute z-10 ml-6 mt-6 transform w-screen max-w-lg lg:-translate-x-1/2 md:hidden bg-white border border-indigo-600 rounded-md shadow-sm">
                 <div className="mt-4 px-2 pt-2 pb-3 space-y-1 sm:px-3">
                   {navigation.map((item) => (
-                    <Disclosure.Button
+                    <Popover.Button
                       key={item.name}
                       as="a"
                       href={item.href}
@@ -101,11 +110,11 @@ export default function Navbar() {
                       aria-current={item.current ? 'page' : undefined}
                     >
                       {item.name}
-                    </Disclosure.Button>
+                    </Popover.Button>
                   ))}
                 </div>
                 <div className="pt-3 pb-3 bg-gray-50">
-                  <div className="flex px-5">
+                  <div className="flex px-4">
                         <a
                             href="https://sultradata.com"
                             className=" font-mono flex px-4 py-2 border border-indigo-600 rounded-md shadow-sm text-base font-normal text-indigo-600 hover:bg-indigo-50/50"
@@ -115,10 +124,11 @@ export default function Navbar() {
 
                   </div>
                 </div>
-              </Disclosure.Panel>
+              </Popover.Panel>
+            </Transition>
             </>
           )}
-        </Disclosure>
+        </Popover>
     </div>
   )
 }
